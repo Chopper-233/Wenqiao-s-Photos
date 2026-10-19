@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5f3ee" />
+  <meta name="description" content="李文峤的个人摄影主页。See the world in my eyes — a collection of light, places, and fleeting moments." />
+  <meta property="og:title" content="Li Wenqiao — See the world in my eyes" />
+  <meta property="og:description" content="Photography, places, and the moments in between." />
+  <title>Li Wenqiao 李文峤 · See the world in my eyes</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header" id="siteHeader">
+    <a href="#home" class="site-logo" aria-label="李文峤 — 返回首页"><span class="logo-square">L<span class="logo-slash">/</span>W</span><span class="logo-name">LI WENQIAO <small>李文峤</small></span></a>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#work" data-i18n="navWork">作品</a>
+      <a href="#gallery" data-i18n="navGallery">影像</a>
+      <a href="#about" data-i18n="navAbout">关于</a>
+      <a href="#contact" data-i18n="navContact">联系</a>
+    </nav>
+    <div class="header-actions">
+      <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">EN <span>/</span> 中</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mainNav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-photo" id="heroPhoto" alt="风景摄影示例" fetchpriority="high" />
+      <div class="hero-shade"></div>
+      <div class="hero-frame-line" aria-hidden="true"></div>
+      <div class="hero-topline"><span class="eyebrow">AN OPEN VISUAL DIARY</span><span class="hero-coordinate">PHOTOGRAPHY · EST. 2026</span></div>
+      <div class="hero-content">
+        <div class="hero-kicker"><span class="mini-rule"></span><span data-i18n="heroKicker">光影所至，皆是故事。</span></div>
+        <h1 id="hero-title">See the world<br/><em>in my eyes<span class="hero-dot">.</span></em></h1>
+        <div class="hero-description"><p data-i18n="heroDescription">世界很大，而每一帧都是我看见它的方式。</p><a href="#work" class="round-arrow" aria-label="探索摄影作品"><span>↗</span></a></div>
+      </div>
+      <div class="hero-footer"><span class="scroll-label"><span class="scroll-track"></span> SCROLL TO EXPLORE</span><div class="hero-counter"><span class="current">01</span><span class="counter-rule"></span><span>04</span></div></div>
+    </section>
+
+    <section class="intro-section section-wrap reveal" aria-label="Introduction">
+      <div class="section-index">[ 00 — THE BEGINNING ]</div>
+      <div class="intro-copy"><p class="intro-lead" data-i18n="introLead">我喜欢在路上，<br/>也喜欢<span>按下快门的瞬间。</span></p><div class="intro-bottom"><p data-i18n="introText">那些偶然遇见的光、陌生城市里的片刻安静，以及平凡日子里微小的惊喜——我想用影像把它们留下来。</p><span class="sparkle" aria-hidden="true">✳</span></div></div>
+    </section>
+
+    <section class="stories-section" id="work" aria-labelledby="storiesTitle">
+      <div class="section-wrap">
+        <div class="section-head reveal"><div><span class="eyebrow dark" data-i18n="selectedLabel">CURATED COLLECTIONS / 精选系列</span><h2 id="storiesTitle" class="section-title" data-i18n="storiesTitle">Stories <em>in frames.</em></h2></div><p class="section-subtitle" data-i18n="storiesSubtitle">每一组照片，都藏着一段旅程。</p></div>
+        <div class="stories-layout">
+          <div class="stories-list" id="storiesList" aria-label="摄影系列"></div>
+          <div class="stories-visual reveal" id="storiesVisual"><div class="stories-image-wrap"><img id="storiesPreview" alt="摄影系列预览" loading="lazy" /><div class="preview-grain"></div><span class="preview-index" id="previewIndex">01 / 04</span></div><div class="preview-caption"><span id="previewCaption">BEYOND THE HORIZON</span><span>↗</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-band" aria-label="Photography quote"><div class="quote-line"><span>THE ART OF NOTICING</span><span class="asterisk">✳</span><span>THE ART OF NOTICING</span><span class="asterisk">✳</span><span>THE ART OF NOTICING</span></div></section>
+
+    <section class="gallery-section section-wrap" id="gallery" aria-labelledby="galleryTitle">
+      <div class="section-head reveal"><div><span class="eyebrow dark" data-i18n="galleryLabel">A VISUAL JOURNAL / 视觉日记</span><h2 id="galleryTitle" class="section-title" data-i18n="galleryTitle">A few <em>moments.</em></h2></div><div class="gallery-meta"><span data-i18n="galleryHint">点击照片，慢慢欣赏。</span><span id="galleryCount">08 FRAMES</span></div></div>
+      <div class="gallery-filters reveal" id="galleryFilters" role="group" aria-label="照片分类"><button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">ALL <span>全部</span></button><button class="filter-btn" type="button" data-filter="landscape" aria-pressed="false">LANDSCAPE <span>风景</span></button><button class="filter-btn" type="button" data-filter="city" aria-pressed="false">CITY <span>城市</span></button><button class="filter-btn" type="button" data-filter="details" aria-pressed="false">MOMENTS <span>瞬间</span></button></div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+      <div class="gallery-foot"><span>ENDLESS PLACES, ENDLESS STORIES.</span><button id="backToTop" class="text-link" type="button" data-i18n="backToTop">返回顶部 ↗</button></div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="aboutTitle"><div class="about-grid section-wrap"><div class="about-visual reveal"><div class="about-picture"><img id="aboutPhoto" alt="安静的自然风景，摄影示例" loading="lazy" /></div><div class="about-picture-caption"><span>FIG. 01 — KEEP LOOKING</span><span>© LW</span></div><span class="about-side-word">OBSERVE / REMEMBER / FEEL</span></div><div class="about-copy reveal"><div class="eyebrow" data-i18n="aboutLabel">BEHIND THE LENS / 镜头背后</div><h2 id="aboutTitle" class="about-title">Hello,<br/><em>I'm Wenqiao.</em></h2><p class="about-name">李文峤 / LI WENQIAO</p><div class="about-rule"></div><p class="about-body" data-i18n="aboutText">你好，我是李文峤。<br/>摄影对我而言，是一种观察世界的方式。比起宏大的叙事，我更愿意捕捉不经意间的光影、情绪与日常。这里是我的私人影像档案，也是我与世界持续展开的一场对话。</p><a href="#contact" class="about-cta"><span data-i18n="aboutCta">说声你好</span><span class="cta-circle">↗</span></a></div></div></section>
+
+    <section class="contact-section section-wrap" id="contact" aria-labelledby="contactTitle"><div class="contact-top"><span class="eyebrow dark" data-i18n="contactLabel">LET'S CONNECT / 保持联系</span><span>© 2026 · LI WENQIAO</span></div><div class="contact-main"><h2 id="contactTitle">Let's see<br/><em>what's next.</em></h2><div class="contact-actions"><p data-i18n="contactText">关于摄影、旅途，或只是想分享一个好故事，欢迎联系我。</p><button class="contact-button" id="emailButton" type="button"><span data-i18n="emailButton">给我写信</span><span>↗</span></button><span class="email-placeholder" id="emailDisplay" data-i18n="emailPlaceholder">邮箱尚未设置 · 可在 config.js 中填写</span></div></div><footer class="footer"><a href="#home" class="footer-mark">LW<span>©</span></a><p>SEE THE WORLD IN MY EYES.</p><div class="footer-right"><span data-i18n="demoCredit">示例图片来自 Unsplash · 请替换为本人作品</span><a href="#home" aria-label="Back to top">↑</a></div></footer></section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片放大预览" aria-hidden="true" tabindex="-1"><div class="lightbox-bar"><span class="lightbox-brand">LI WENQIAO <span>/</span> PHOTOGRAPHY</span><span class="lightbox-count" id="lightboxCount">01 / 08</span><button class="lightbox-close" id="lightboxClose" type="button" aria-label="关闭">✕</button></div><div class="lightbox-stage"><button class="lightbox-nav prev" id="lightboxPrev" type="button" aria-label="上一张">←</button><img id="lightboxImage" alt="" /><button class="lightbox-nav next" id="lightboxNext" type="button" aria-label="下一张">→</button></div><div class="lightbox-bottom"><div><strong id="lightboxTitle">Untitled</strong><span id="lightboxSub">PHOTOGRAPHIC STUDY</span></div><span class="lightbox-tip">ESC TO CLOSE · ← → TO NAVIGATE</span></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
